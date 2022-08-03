@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*font-family: 'Big Shoulders Display', cursive;*/
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+main div{
+    width:33.33%;
+    padding: 32px;
+}
+
+.first{
+    background-color: var(--Bright-orange);
+    border-radius: 8px 0 0 8px;
+}
+.sec{
+    background-color: var(--Dark-cyan);
+}
+
+.third{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+button{
+    padding: 8px 16px;
+    border-radius: 25px;
+    background: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    font-family:'Lexend Deca', sans-serif;
+    font-size: 14px;
+}
+
+.first button{
+    color: var(--Bright-orange);
+}
+.sec button{
+    color: var(--Dark-cyan);
+}
+.third button{
+    color: var(--Very-dark-cyan);
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p{
+   color: var(--Transparent-white-paragraphs);
+   font-size: 15px;
+   font-family: 'Lexend Deca', sans-serif;
+   padding-bottom: 40px;
+   line-height: 1.5rem;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid var(--Very-light-gray-background-headings-buttons) ;
+    color:var(--Very-light-gray-background-headings-buttons) ;
+}
+
+
+@media screen and (max-width:600px) {
+    body{
+        height: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        max-width: 100%;
+       
+    }
+
+    main div{
+        width: 100%;
+    }
+
+    .first{
+        border-radius: 8px 8px 0 0;
+    }
+    .third{
+        border-radius: 0 0 8px 8px;
+    }
+}
